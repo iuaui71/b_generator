@@ -15,11 +15,11 @@ const second = ['monetize ','prevent ','transform ','reinvent ','benchmark ','me
 const third = ['sexy ','disruptive ','block-chain ','available ','visionary ','integrated ','enterprice ','collaborative ','cross-media ','wireless ','virtual ','venture '];
 const fourth = ['e-business.','convergence.','management.','synergies.','markets.','relationships.','interfaces.','channels.','models.','niches.','communities.','technologies'];
 
-export function createPhrase(array) {
+function createPhrase(array) {
     return array[Math.floor(Math.random() * 12)];
 }
-export function createWisdom(arr1, arr2, arr3, arr4) {
+function createWisdom(arr1, arr2, arr3, arr4) {
     return createPhrase(arr1) + createPhrase(arr2) + createPhrase(arr3) + createPhrase(arr4);
 }
 
-//console.log(createWisdom(first, second, third, fourth));
+console.log(createWisdom(first, second, third, fourth));
